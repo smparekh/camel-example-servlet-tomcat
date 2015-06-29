@@ -1,7 +1,9 @@
 Camel Servlet and Apache Tomcat example
 =======================================
 
-An example which shows how to use the Camel Servlet with Apache Tomcat.
+An example which proxies request to [Camel Rest Servlet Example](https://github.com/smparekh/camel-example-servlet-rest-tomcat)
+
+It uses a simple header 'Auth-Key' = 'RedHat' to authorize the request.
 
 You will need to package this example first:
   mvn package
@@ -11,19 +13,7 @@ deploy folder of Apache Tomcat.
 
 And then hit this url from a webbrowser which has further
 instructions (use correct version number)
-  http://localhost:8080/camel-example-servlet-tomcat-{version}
+  http://localhost:8080/proxyservice/
 
-The servlet is located at (use correct version number)
-  http://localhost:8080/camel-example-servlet-tomcat-{version}/camel/hello
-
-This example is documented at
-  http://camel.apache.org/servlet-tomcat-example.html
-
-If you hit any problems please let us know on the Camel Forums
-  http://camel.apache.org/discussion-forums.html
-
-Please help us make Apache Camel better - we appreciate any feedback you may
-have.  Enjoy!
-
-------------------------
-The Camel riders!
+If you hit any problems please let me know!
+---------------------------------------
